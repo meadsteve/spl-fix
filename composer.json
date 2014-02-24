@@ -1,0 +1,16 @@
+{
+    "name": "mead-steve/spl-fix",
+    "description": "The spl has some really cool features but some odd naming conventions and some real GOTCHAs. This library is intended to make the spl code easier to use",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steve B",
+            "email": "meadsteve@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MeadSteve\\": "src/"
+        }
+    }
+}
