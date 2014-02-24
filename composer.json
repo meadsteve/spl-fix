@@ -10,7 +10,10 @@
     ],
     "autoload": {
         "psr-4": {
-            "MeadSteve\\": "src/"
+            "MeadSteve\\SplFix\\": "src/SplFix/"
         }
+    },
+    "require": {
+        "php": ">=5.3.0"
     }
 }
