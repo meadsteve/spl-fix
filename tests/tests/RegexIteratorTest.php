@@ -2,7 +2,7 @@
 
 use \MeadSteve\SplFix\RegexIterator;
 
-require_once __DIR__ . "/fixtures/AggregateArrayIterator.php";
+require_once __DIR__ . "/../fixtures/AggregateArrayIterator.php";
 
 class RegexIteratorTest extends PHPUnit_Framework_TestCase
 {

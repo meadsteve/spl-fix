@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__ . "/fixtures/AggregateArrayIterator.php";
-require_once __DIR__ . "/fixtures/ConcreteFilterIterator.php";
+require_once __DIR__ . "/../fixtures/AggregateArrayIterator.php";
+require_once __DIR__ . "/../fixtures/ConcreteFilterIterator.php";
 
 class FilterIteratorTest extends PHPUnit_Framework_TestCase
 {
