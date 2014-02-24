@@ -6,7 +6,7 @@ require_once __DIR__ . "/fixtures/AggregateArrayIterator.php";
 
 class RegexIteratorTest extends PHPUnit_Framework_TestCase
 {
-    public function testThing()
+    public function testCanWrapAnAggregateIterator()
     {
         $aggregateIterator = new AggregateArrayIterator(array("one", "two", "three"));
         $regexIterator = new RegexIterator($aggregateIterator, '/t.+/');
