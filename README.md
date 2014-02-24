@@ -10,6 +10,8 @@ Fixes/Additions
 
 The limit iterator is very useful if you want to grab a subset of an iterator. Good right? Pass it to count() however and you'll always get a value of 1. This package provides an updated LimitIterator class that correctly implements countable.
 
-## RegexIterator
+## FilterIterator
 
-The spl regex iterator can only be passed an iterator. This is now wrapped so that any traversable can be passed in. This is handled by wrapping the traversible in an IteratorIterator.
+The spl FilterIterator can only be passed an iterator. This is now wrapped so that any traversable can be passed in. This is handled by wrapping the traversable in an IteratorIterator.
+The following child Iterators have also been wrapped:
+- RegexIterator
