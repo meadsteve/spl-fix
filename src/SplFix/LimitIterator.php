@@ -15,7 +15,6 @@ class LimitIterator extends \LimitIterator implements \Countable
         parent::__construct($iterator, $offset, $count);
     }
 
-
     /**
      * @return int
      */
