@@ -1,5 +1,6 @@
 spl-fix
 =======
+[![Build Status](https://travis-ci.org/meadsteve/spl-fix.png?branch=master)](https://travis-ci.org/meadsteve/spl-fix)
 
 The php spl has some really cool feaures but also some bugs/gotchas. This is a library to wrap and hopefully reduce the pain caused by the spl.
 
