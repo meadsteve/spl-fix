@@ -19,7 +19,8 @@ class LimitIterator extends \LimitIterator implements \Countable
     /**
      * @return int
      */
-    public function count() {
+    public function count()
+    {
         return min(count($this->getInnerIterator()), $this->maxCount);
     }
 } 
