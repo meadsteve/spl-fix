@@ -18,7 +18,7 @@ The easiest way to install this library is using composer. In your project's `co
 
 Then run `composer update`.
 
-# Fixes/Additions
+# Fixes
 
 ## LimitIterator
 
@@ -29,3 +29,9 @@ The limit iterator is very useful if you want to grab a subset of an iterator. G
 The spl FilterIterator can only be passed an iterator. This is now wrapped so that any traversable can be passed in. This is handled by wrapping the traversable in an IteratorIterator.
 The following child Iterators have also been wrapped:
 - RegexIterator
+
+# Additions
+
+## RecursingArrayIterator
+This is a short hand for wrapping an array in a RecursiveIterator then wrapping that in a
+RecursiveIteratorIterator.
