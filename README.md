@@ -4,8 +4,21 @@ spl-fix
 
 The php spl has some really cool feaures but also some bugs/gotchas. This is a library to wrap and hopefully reduce the pain caused by the spl.
 
-Fixes/Additions
-=======
+# Installation
+
+The easiest way to install this library is using composer. In your project's `composer.json` file add:
+
+```json
+    {
+        "require": {
+            "mead-steve/spl-fix": "dev-master"
+        }
+    }
+```
+
+Then run `composer update`.
+
+# Fixes/Additions
 
 ## LimitIterator
 
