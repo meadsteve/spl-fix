@@ -44,14 +44,14 @@ The IteratorWalker allows iterators to be used in the same way arrays are used i
 will behave in the same way:
 
 ```php
-    array_walk($array, function($value, $key) use (&$output) {
+    array_walk($array, function($value, $key) {
         echo $key . "=>" . $value;
     });
 ```
 
 ```php
     $walker = new IteratorWalker($iterator);
-    $walker->walk(function($value, $key) use (&$output) {
+    $walker->walk(function($value, $key) {
         echo $key . "=>" . $value;
     });
 ```
