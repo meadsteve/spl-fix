@@ -2,7 +2,13 @@
 
 namespace MeadSteve\SplFix\Helpers;
 
-
+/**
+ * Class IteratorWalker
+ *
+ * Allows iterators to be acted on with a callable in the same way arrays can be operated on
+ * using array_walk.
+ *
+ */
 class IteratorWalker
 {
     /**
