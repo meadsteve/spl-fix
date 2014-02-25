@@ -38,3 +38,20 @@ The following child Iterators have also been wrapped:
 ## RecursingArrayIterator
 This is a short hand for wrapping an array in a RecursiveIterator then wrapping that in a
 RecursiveIteratorIterator.
+
+## Helpers/IteratorWalker
+The IteratorWalker allows iterators to be used in the same way arrays are used in array_walk. So that the two snippets
+will behave in the same way:
+
+```php
+    array_walk($array, function($value, $key) use (&$output) {
+        echo $key . "=>" . $value;
+    });
+```
+
+```php
+    $walker = new IteratorWalker($iterator);
+    $walker->walk(function($value, $key) use (&$output) {
+        echo $key . "=>" . $value;
+    });
+```
