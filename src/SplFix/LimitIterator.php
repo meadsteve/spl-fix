@@ -3,23 +3,41 @@
 namespace MeadSteve\SplFix;
 
 use Iterator;
+use Countable;
 
-class LimitIterator extends \LimitIterator implements \Countable
+/**
+ * Class LimitIterator
+ *
+ * @package MeadSteve\SplFix
+ */
+class LimitIterator extends \LimitIterator implements Countable
 {
-
+    /**
+     * @var integer
+     */
     protected $maxCount;
 
+    /**
+     * LimitIterator constructor.
+     *
+     * @param \Iterator $iterator
+     * @param           $offset
+     * @param           $count
+     */
     public function __construct(Iterator $iterator, $offset, $count)
     {
         $this->maxCount = $count;
+
         parent::__construct($iterator, $offset, $count);
     }
 
     /**
-     * @return int
+     * Counts things.
+     *
+     * @return integer
      */
     public function count()
     {
         return min(count($this->getInnerIterator()), $this->maxCount);
     }
-} 
+}
